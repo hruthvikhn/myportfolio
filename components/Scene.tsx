@@ -45,7 +45,7 @@ function DataWave() {
   return (
     <points ref={pointsRef}>
       <bufferGeometry>
-        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
+        <bufferAttribute attach="attributes-position" args={[positions, 3] as any} />
       </bufferGeometry>
       <pointsMaterial size={0.08} color="#06b6d4" transparent opacity={0.6} sizeAttenuation={true} />
     </points>
